@@ -1,7 +1,19 @@
 /*Import custom fonts config file */
 @import "fonts.css";
 
+/* Import custom plain css */
+@import "styles.css";
+
 /*Setup tailwind css layers*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    [type='text'],
+    [multiple],
+    textarea,
+    select {
+        @apply border-0 bg-gray-100 py-3 text-black rounded-sm focus:ring-2 focus:ring-brand-900 focus:border-brand-900;
+    }
+}

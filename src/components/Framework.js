@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 
 const Framework = ({children}) => {
     return (
-        <div>
+        <div className="px-6 lg:px-36 2xl:px-48 min-h-screen">
             <Navbar />
             {children}
         </div>
