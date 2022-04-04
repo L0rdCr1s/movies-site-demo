@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'regular';
+    src: url('../fonts/euclidcircularb-regular.ttf');
+}
+
+@font-face {
+    font-family: 'semi-bold';
+    src: url('../fonts/euclidcircularb-semibold.ttf');
+}
+
+@font-face {
+    font-family: 'bold';
+    src: url('../fonts/euclidcircularb-bold.ttf');
+}

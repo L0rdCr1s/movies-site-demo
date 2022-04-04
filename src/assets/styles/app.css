@@ -1,3 +1,7 @@
+/*Import custom fonts config file */
+@import "fonts.css";
+
+/*Setup tailwind css layers*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
