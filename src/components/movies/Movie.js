@@ -1,14 +1,19 @@
+import PropTypes from 'prop-types';
 import MovieName from "components/movies/MovieName";
 
-const Movie = () => {
+const Movie = (props) => {
     return (
         <div className="bg-gray-100 rounded-lg overflow-hidden relative">
-            <div className="w-full p-5 bottom-0 backdrop-blur-sm bg-white/10 absolute">
-                <MovieName />
+            <div className="w-full p-5 bottom-0 backdrop-blur-sm bg-black/70 absolute">
+                <MovieName {...props} />
             </div>
-            <img src={"/images/small.jpg"} alt="cover photo" />
+            <img src={props.medium_cover_image} alt="cover photo" />
         </div>
     )
+}
+
+Movie.propTypes = {
+    medium_cover_image: PropTypes.string,
 }
 
 export default Movie;
