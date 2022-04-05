@@ -6,12 +6,16 @@
 
 import Navbar from 'components/navbar/NavBar';
 import PropTypes from 'prop-types';
+import Footer from "components/Footer";
 
 const Framework = ({children}) => {
     return (
-        <div className="px-4 lg:px-52 2xl:px-48 min-h-screen">
-            <Navbar />
-            {children}
+        <div className="min-h-screen">
+            <div className="px-4 lg:px-52 2xl:px-48">
+                <Navbar />
+                {children}
+            </div>
+            <Footer />
         </div>
     )
 }
