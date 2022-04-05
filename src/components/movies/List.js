@@ -18,7 +18,7 @@ const MoviesList = () => {
                 loading
                     ? (<span>loading</span>)
                     : (
-                        <div className="mt-8 grid grid-cols-2 gap-4 overflow-hidden md:grid-cols-4 md:gap-8">
+                        <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-8">
                             { [1,2,3,4,5,6,7,8,9].map(item => <Movie key={item} />) }
                         </div>
                     )
