@@ -54,7 +54,7 @@ export const useApi = ({link, method}) => {
         isRequesting(true);
 
         // make api call
-        return await api({link, method: 'get', variables})
+        return await api({link, method: method, variables})
             .then(res => res.json())
             .then(res => {
                 if (res.status === 'ok') {

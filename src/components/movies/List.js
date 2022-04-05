@@ -6,7 +6,7 @@ const MOVIE_LIST_API = 'https://yts.mx/api/v2/list_movies.json';
 
 const MoviesList = () => {
     const [movies, setMovies] = useState([]);
-    const [fetchMovies, {loading, data, error}] = useApi({link: MOVIE_LIST_API});
+    const [fetchMovies, {loading, data, error}] = useApi({link: MOVIE_LIST_API, method: 'get'});
 
     useEffect(() => {
         fetchMovies({variables: {limit: 12, sort_by: 'year', order_by: 'desc'}});
