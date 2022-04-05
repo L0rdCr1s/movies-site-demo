@@ -6,7 +6,7 @@ const NavBar = () => {
             <div className="flex flex-grow py-5 mt-4">
                 <div className="basis-1/2 flex items-center">
                     <span className="font-bold text-2xl">
-                        ASYX<span className="text-brand-900">MOVIES</span>
+                        BSHOO<span className="text-brand-900">MOVIES</span>
                     </span>
                     <SearchBar styles="hidden md:flex" />
                 </div>

@@ -20,9 +20,9 @@ const MovieCardFooter = (props) => {
 }
 
 MovieCardFooter.propTypes = {
-    year: PropTypes.string,
+    year: PropTypes.number,
     title: PropTypes.string,
-    rating: PropTypes.string,
+    rating: PropTypes.number,
 }
 
 export default MovieCardFooter;

@@ -21,7 +21,7 @@ const Framework = ({children}) => {
 }
 
 Framework.propTypes = {
-    children: PropTypes.elementType,
+    children: PropTypes.node,
 }
 
 export default Framework;

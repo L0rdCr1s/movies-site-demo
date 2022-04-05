@@ -9,12 +9,13 @@ const MoviesList = () => {
     const [fetchMovies, {loading, data, error}] = useApi({link: MOVIE_LIST_API, method: 'get'});
 
     useEffect(() => {
-        fetchMovies({variables: {limit: 18, sort_by: 'year', order_by: 'desc'}});
+        fetchMovies({
+            variables: {quality: '1080p', limit: 30, page: 2}
+        });
     }, []);
 
     useEffect(() => {
         setMovies(data.movies)
-        console.log(data.movies)
     }, [data]);
 
     if (loading) {

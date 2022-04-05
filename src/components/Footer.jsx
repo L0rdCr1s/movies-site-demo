@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <section className="py-10 bg-black flex flex-col justify-center items-center">
             <span className="font-bold text-brand-100 text-3xl">
-                ASYX<span className="text-brand-900">MOVIES</span>
+                BSHOO<span className="text-brand-900">MOVIES</span>
             </span>
             <div className="flex w-96 md:w-3/12 py-7 text-brand-300 justify-between">
                 <a href="mailto:shoochristopher@gmail.com" className="flex items-center">
