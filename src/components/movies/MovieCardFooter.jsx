@@ -1,7 +1,7 @@
 import {StarIcon} from "@heroicons/react/solid";
 import PropTypes from "prop-types";
 
-const MovieName = (props) => {
+const MovieCardFooter = (props) => {
     return (
         <div className="md:mr-6">
             <div className="text-gray-400 text-xs">
@@ -19,10 +19,10 @@ const MovieName = (props) => {
     )
 }
 
-MovieName.propTypes = {
+MovieCardFooter.propTypes = {
     year: PropTypes.string,
     title: PropTypes.string,
     rating: PropTypes.string,
 }
 
-export default MovieName;
+export default MovieCardFooter;

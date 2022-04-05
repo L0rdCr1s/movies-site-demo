@@ -1,5 +1,5 @@
 import WatchButton from 'components/hero/WatchButton';
-import MovieName from 'components/hero/MovieName';
+import HeroFooter from 'components/hero/HeroFooter';
 
 const Hero = () => {
     return (
@@ -7,7 +7,7 @@ const Hero = () => {
             <div className="h-full w-full bg-brand-900 rounded-xl overflow-hidden relative">
                 <div className="h-full w-full bg-gradient-to-t from-gray-900 flex flex-col justify-end px-5 pb-3 absolute md:px-8">
                     <div className="flex items-end justify-between pb-4">
-                        <MovieName />
+                        <HeroFooter />
                         <WatchButton />
                     </div>
                 </div>

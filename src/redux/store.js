@@ -23,7 +23,7 @@ const persistConfig = {
 };
 
 const reducers = combineReducers({
-    movie: movieReducer,
+    movieStore: movieReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, reducers);

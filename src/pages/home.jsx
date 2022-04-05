@@ -5,8 +5,10 @@ import MoviesList from "components/movies/List";
 const Home = () => {
   return (
       <Framework>
-          <Hero />
-          <MoviesList />
+          <>
+              <Hero />
+              <MoviesList />
+          </>
       </Framework>
   );
 }

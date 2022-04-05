@@ -9,7 +9,7 @@ const MoviesList = () => {
     const [fetchMovies, {loading, data, error}] = useApi({link: MOVIE_LIST_API, method: 'get'});
 
     useEffect(() => {
-        fetchMovies({variables: {limit: 12, sort_by: 'year', order_by: 'desc'}});
+        fetchMovies({variables: {limit: 18, sort_by: 'year', order_by: 'desc'}});
     }, []);
 
     useEffect(() => {
@@ -19,16 +19,20 @@ const MoviesList = () => {
 
     if (loading) {
         return (
-            <section className="py-14">
-                <span>loading</span>
+            <section className="py-48 flex justify-center items-center">
+                <span className="font-bold text-brand-900 text-4xl">
+                    loading...
+                </span>
             </section>
         )
     }
 
     if (error) {
         return (
-            <section className="py-14">
-                <span>sorry no movies</span>
+            <section className="py-48 flex justify-center items-center">
+                <span className="font-bold text-rose-900 text-4xl">
+                    Sorry no movies
+                </span>
             </section>
         )
     }
