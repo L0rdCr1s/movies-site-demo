@@ -1,10 +1,10 @@
 import Framework from 'components/Framework';
-import Hero from 'components/hero/Hero';
+import Details from "components/movies/Details";
 
 const MovieDetails = () => {
     return (
         <Framework>
-            <Hero />
+            <Details />
         </Framework>
     );
 }

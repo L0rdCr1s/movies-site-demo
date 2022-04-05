@@ -14,6 +14,7 @@ const MoviesList = () => {
 
     useEffect(() => {
         setMovies(data.movies)
+        console.log(data.movies)
     }, [data]);
 
     if (loading) {
