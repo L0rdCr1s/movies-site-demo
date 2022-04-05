@@ -3,8 +3,8 @@ import WatchButton from "components/hero/WatchButton";
 
 const Details = () => {
     return (
-        <section className="flex h-screen overflow-hidden grid grid-cols-2 pt-7 md:grid-cols-3 gap-10">
-            <div className="h-4/6 rounded-xl overflow-hidden relative">
+        <section className="flex h-screen overflow-hidden grid grid-cols-1 py-7 md:grid-cols-3 gap-10">
+            <div className="md:h-4/6 rounded-xl overflow-hidden relative">
                 <div className="h-full w-full bg-gradient-to-t from-gray-900 flex flex-col justify-end px-5 pb-3 absolute">
                     <div className="flex flex-col items-start justify-between pb-4">
                         <MovieName />
