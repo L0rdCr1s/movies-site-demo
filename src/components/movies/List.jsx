@@ -14,13 +14,20 @@ const MoviesList = () => {
 
     useEffect(() => {
         setMovies(data.movies)
-        console.log(data.movies)
     }, [data]);
 
     if (loading) {
         return (
             <section className="py-14">
                 <span>loading</span>
+            </section>
+        )
+    }
+
+    if (error) {
+        return (
+            <section className="py-14">
+                <span>sorry no movies</span>
             </section>
         )
     }

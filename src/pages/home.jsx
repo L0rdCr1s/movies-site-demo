@@ -2,7 +2,7 @@ import Framework from 'components/Framework';
 import Hero from 'components/hero/Hero';
 import MoviesList from "components/movies/List";
 
-function MainPage() {
+const Home = () => {
   return (
       <Framework>
           <Hero />
@@ -11,4 +11,4 @@ function MainPage() {
   );
 }
 
-export default MainPage;
+export default Home;

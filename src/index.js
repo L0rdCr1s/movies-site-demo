@@ -1,15 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { BrowserRouter } from "react-router-dom";
 import { createRoot } from 'react-dom/client';
 import 'assets/styles/app.css';
-import MainPage from 'pages/main-page';
+import Router from 'routes/main-route';
 import reportWebVitals from 'assets/scripts/reportWebVitals';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(
     <React.StrictMode>
-        <MainPage />
+        <BrowserRouter>
+            <Router />
+        </BrowserRouter>
     </React.StrictMode>
 );
 
